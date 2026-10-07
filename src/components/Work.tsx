@@ -5,6 +5,14 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
+    title: "Scrawlspace",
+    category: "E2E-encrypted multiplayer whiteboard + dev tool hub",
+    tools:
+      "React 19, TypeScript, Vite, Socket.IO, Express, Web Crypto (AES-GCM), Rough.js, PWA, WebAssembly",
+    image: "/images/scrawlspace.png",
+    link: "https://scrawlspace.vercel.app",
+  },
+  {
     title: "Real-time Drawing Editor",
     category: "Collaborative canvas editor",
     tools: "Next.js, Konva.js, PDF Export",
@@ -109,7 +117,11 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      <WorkImage
+                        image={project.image}
+                        alt={project.title}
+                        link={project.link}
+                      />
                     </div>
                   </div>
                 </div>
